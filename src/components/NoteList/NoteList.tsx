@@ -4,11 +4,11 @@ import { Note } from "../../types/note";
 import { deleteNote } from "../../services/noteService";
 import toast from "react-hot-toast";
 
-interface NotesProps {
+interface NoteListProps {
   notes: Note[];
 }
 
-export default function NoteList({ notes }: NotesProps) {
+export default function NoteListProps({ notes }: NoteListProps) {
   const queryClient = useQueryClient();
 
   const mutation = useMutation({

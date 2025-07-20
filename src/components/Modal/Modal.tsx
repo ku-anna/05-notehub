@@ -17,7 +17,7 @@ export default function Modal({ children, onClose }: ModalProps) {
 
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
-      document.body.style.overflow = "hidden";
+      document.body.style.overflow = "previousOverflow";
     };
   }, [onClose]);
 
